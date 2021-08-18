@@ -1,0 +1,55 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+en:
+  title_page: "Ruby on Rails Tutorial Sample App"
+  static_pages:
+    home:
+      title: "Home"
+      heading: "Simple App"
+      descripiton: "This is the home page for the"
+      ror: "Ruby on Rails Tutorial"
+      descripiton_1: "sample application."
+    help:
+      title: "Help"
+      intro: "Get help on the Ruby on Rails Tutorial at the "
+      rails_help: "Rails Tutorial Help page."
+      intro_1: "To get help on this sample app, see "
+      rails_book: "Ruby on Rails Tutorial book."
+    contact:
+      title: "Contact"
+      descripiton: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      contact_page: "contact page."
+    about:
+      title: "About"
+      descripiton: "The Ruby on Rails Tutorial, part of the Learn Enough family of tutorials, is a book and screencast series to teach web development with "
+      ror: "Ruby on Rails. "
+      descripiton_1: "This is the sample app for the tutorial."
