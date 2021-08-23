@@ -1,11 +1,14 @@
 en:
   title_page: "Ruby on Rails Tutorial Sample App"
   rort: "Ruby on Rails Tutorial"
+  footer_html: "The %{link_1} by %{link_2}" 
+  ct: "Contact"
   static_pages:
     home:
       title: "Home"
       heading: "Simple App"
       descripiton_html: "This is the home page for the %{link} sample application."
+      logor: "Rails logo"
     help:
       title: "Help"
       descripiton_html: "Get help on the Ruby on Rails Tutorial at the %{link}.To get help on this sample app, see the <em>%{link_1}</em> %{link_2}."
@@ -15,4 +18,10 @@ en:
     about:
       title: "About"
       descripiton_html: "The <em>%{link}</em>, part of the %{link_1} family of tutorials, is a %{link_2} and %{link_3} to teach web development with %{link_4}. This is the sample app for the tutorial."
-      
+  users:
+    signup: "Sign up"
+    login: "Log in"
+    signupnow: "Sign up now!"
+    new:
+      title: "News"
+      intro: "This will be a signup page for new users."
