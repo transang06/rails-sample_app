@@ -1,0 +1,8 @@
+<% provide(:title, t(".title")) %>
+<h1><%= t ".title" %></h1>
+<p>
+  <%= t ".descripiton_html", 
+  link: link_to("Rails Tutorial Help page", "https://www.railstutorial.org/help"),
+  link_1: link_to(t("rort"), "https://www.railstutorial.org/book"),
+  link_2: link_to("book", "https://www.railstutorial.org/book")%>
+</p>
