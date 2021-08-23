@@ -44,3 +44,6 @@ yarn-debug.log*
 /config/credentials.yml.enc
 /config/database.yml
 .gitattributes
+
+.framgia-ci-reports
+.framgia-ci-result.temp.yml
