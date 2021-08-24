@@ -1,8 +1,11 @@
 en:
   title_page: "Ruby on Rails Tutorial Sample App"
   rort: "Ruby on Rails Tutorial"
-  footer_html: "The %{link_1} by %{link_2}" 
+  footer_html: "The %{link_1} by %{link_2}"
+  sample: "sample app" 
   ct: "Contact"
+  theformerror_html: "The form contains %{error}."
+  wc: "Welcome to the Sample App!"
   static_pages:
     home:
       title: "Home"
@@ -11,6 +14,7 @@ en:
       logor: "Rails logo"
     help:
       title: "Help"
+      rthp: "Rails Tutorial Help page"
       descripiton_html: "Get help on the Ruby on Rails Tutorial at the %{link}.To get help on this sample app, see the <em>%{link_1}</em> %{link_2}."
     contact:
       title: "Contact"
