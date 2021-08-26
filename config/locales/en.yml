@@ -1,6 +1,9 @@
 en:
+  eng: "English"
+  vnese: "Vietnamese"
   title_page: "Ruby on Rails Tutorial Sample App"
   rort: "Ruby on Rails Tutorial"
+  ror: "Ruby on Rails"  
   footer_html: "The %{link_1} by %{link_2}"
   sample: "sample app" 
   ct: "Contact"
@@ -8,6 +11,11 @@ en:
   theformerror_html: "The form contains %{error}."
   welcome: "Welcome to the Sample App!"
   invalid_email: "Invalid email/password combination"
+  error: "error"
+  other:
+    book: "book"
+    screencast_series: "screencast series"
+    remember: "Remember me on this computer"
   static_pages:
     home:
       title: "Home"
