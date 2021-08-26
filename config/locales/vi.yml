@@ -1,0 +1,62 @@
+vi:
+  eng: "Tiếng Anh"
+  vnese: "Tiếng Việt"
+  title_page: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
+  rort: "Hướng dẫn sử dụng Ruby on Rails"
+  ror: "Ruby on Rails"  
+  footer_html: "%{link_1} bởi %{link_2}"
+  sample: "sample app" 
+  ct: "Liên hệ"
+  confir: "Xác nhận"
+  theformerror_html: "Biểu mẫu chứa %{error}."
+  welcome: "Chào mừng bạn đến với Ứng dụng mẫu!"
+  invalid_email: "Kết hợp email / mật khẩu không hợp lệ"
+  error: "lỗi"
+  other:
+    book: "sách"
+    screencast_series: "loạt phim truyền hình"
+    remember: "Hãy ghi nhớ tôi trên máy tính này"
+    are_u_sure: "Bạn có chắc không?"
+    change: "Thay đổi"
+  static_pages:
+    home:
+      title: "Trang chủ"
+      heading: "Simple App"
+      descripiton_html: "Đây là trang chủ của ứng dụng mẫu %{link}."
+      logor: "Rails logo"
+    help:
+      title: "Hướng dẫn"
+      rthp: "Trang Trợ giúp Hướng dẫn Rails"
+      descripiton_html: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại %{link}. Để nhận trợ giúp về ứng dụng mẫu này, hãy xem <em> %{link_1} </em> %{link_2}."
+    contact:
+      title: "Liên hệ"
+      descripiton_html: "Liên hệ với Hướng dẫn Ruby on Rails về ứng dụng mẫu tại% {link}."  
+    about:
+      title: "Về chúng tôi"
+      descripiton_html: "<em> %{link} </em>, một phần của nhóm hướng dẫn %{link_1}, là %{link_2} và %{link_3} để dạy phát triển web với %{link_4}. Đây là ứng dụng mẫu cho hướng dẫn."
+  users:
+    users: "Người dùng"
+    signup: "Đăng ký"
+    login: "Đăng nhập"
+    signupnow: "Đăng ký ngay!"
+    new_user: "Người dùng mới?"
+    logout: "Đăng xuất"
+    pl_login: "Xin vui lòng đăng nhập."
+    acc: "Tài khoản"
+    create_account: "Tạo tài khoản của tôi"
+    user_deleted: "Người dùng đã bị xóa"
+    settings: "Cài đặt"
+    delete: "Xóa bỏ"
+    profile: "Hồ sơ"
+    profile_updated: "Hồ sơ cá nhân đã cập nhật"
+    edit:
+      update_profile: "Cập nhật hồ sơ của bạn"
+      edit_user: "Người dùng biên tập"
+      save: "Lưu thay đổi"   
+    index:
+      all: "Tất cả người dùng"
+    new:
+      title: "Tin tức"
+      intro: "Đây sẽ là trang đăng ký cho người dùng mới."
+      create: "Tạo tài khoản của tôi" 
+    nil: "Người dùng này không tồn tại trong hệ thống"
