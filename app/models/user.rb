@@ -1,7 +1,17 @@
+class MyValidator < ActiveModel::Validator
+  def validate record
+    user = User.find_by email: record.email
+    return unless user&.authenticate record.password
+
+    record.errors.add :password, :old_password
+  end
+end
+
 class User < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i.freeze
-  before_save{email.downcase!}
   attr_accessor :remember_token
+  include ActiveModel::Validations
+  validates_with MyValidator
   validates :name, presence: true,
     length: {maximum: Settings.validation.name_max}
   validates :email, presence: true,
@@ -9,8 +19,11 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX},
     uniqueness: true
   validates :password, presence: true, length:
-    {minimum: Settings.validation.pass_min}
+    {minimum: Settings.validation.pass_min}, allow_nil: true
   has_secure_password
+  before_save{email.downcase!}
+
+  scope :latest, ->{order(created_at: :desc)}
 
   class << self
     def digest string
