@@ -16,6 +16,8 @@ en:
     book: "book"
     screencast_series: "screencast series"
     remember: "Remember me on this computer"
+    are_u_sure: "Are you sure?"
+    change: "Change"
   static_pages:
     home:
       title: "Home"
@@ -33,14 +35,36 @@ en:
       title: "About"
       descripiton_html: "The <em>%{link}</em>, part of the %{link_1} family of tutorials, is a %{link_2} and %{link_3} to teach web development with %{link_4}. This is the sample app for the tutorial."
   users:
+    users: "Users"
     signup: "Sign up"
     login: "Log in"
     signupnow: "Sign up now!"
     new_user: "New user?"
     logout: "Log out"
+    pl_login: "Please log in."
     acc: "Account"
     create_account: "Create my account"
-    nil: "This user does not exist in the system"
+    user_deleted: "User deleted"
+    user_deleted_fails: "Delete user failed"
+    settings: "Settings"
+    delete: "Delete"
+    profile: "Profile"
+    profile_updated: "Profile updated"    
+    edit:
+      update_profile: "Update your profile"
+      edit_user: "Edit user"
+      save: "Save changes"
+    index:
+      all: "All users"
     new:
       title: "News"
       intro: "This will be a signup page for new users."
+      create: "Create my account"
+    nil: "This user does not exist in the system"
+  activerecord:
+      errors:
+        models:
+          user:
+            attributes:
+              password:
+                old_password: "is the same as the old password"
