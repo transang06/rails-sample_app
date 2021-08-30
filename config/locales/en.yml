@@ -5,7 +5,7 @@ en:
   rort: "Ruby on Rails Tutorial"
   ror: "Ruby on Rails"  
   footer_html: "The %{link_1} by %{link_2}"
-  sample: "sample app" 
+  sample: "Sample app" 
   ct: "Contact"
   confir: "Confirmation"
   theformerror_html: "The form contains %{error}."
@@ -18,6 +18,7 @@ en:
     remember: "Remember me on this computer"
     are_u_sure: "Are you sure?"
     change: "Change"
+    hi: "Hi %{name}"
   static_pages:
     home:
       title: "Home"
@@ -61,6 +62,14 @@ en:
       intro: "This will be a signup page for new users."
       create: "Create my account"
     nil: "This user does not exist in the system"
+  user_mailer:
+    acc_activated: "Account activated!"
+    invalid: "Invalid activation link"
+    check_mail: "Please check your email to activate your account."
+    acc_not_acti: "Account not activated. Check your email for the activation link."
+    welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+    activate: "Activate"
+    acc_activation: "Account activation"
   activerecord:
       errors:
         models:
