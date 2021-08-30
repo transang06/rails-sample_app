@@ -70,6 +70,18 @@ vi:
     welcome: "Chào mừng bạn đến với Sample App! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
     activate: "Hoạt động"
     acc_activation: "Kích hoạt tài khoản"
+    mail_reset: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu"
+    mail_not_found: "Không tìm thấy địa chỉ email"
+    pass_empty: "không thể để trống"
+    pass_reset: "Mật khẩu đã được đặt lại."
+    pass_expired: "Đặt lại mật khẩu đã hết hạn."
+    reset_pass: "Đặt lại mật khẩu"
+    forgot_pass: "Quên mật khẩu"
+    forgot_pass1: "(Quên mật khẩu)"
+    pass_re: "Đặt lại mật khẩu"
+    click: "Để đặt lại mật khẩu của bạn, hãy nhấp vào liên kết bên dưới:"
+    two_h: "Liên kết này sẽ hết hạn sau hai giờ."
+    ignore: "Nếu bạn không yêu cầu đặt lại mật khẩu của mình, vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
   activerecord:
         errors:
           models:
