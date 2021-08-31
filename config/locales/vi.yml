@@ -12,6 +12,7 @@ vi:
   welcome: "Chào mừng bạn đến với Ứng dụng mẫu!"
   invalid_email: "Kết hợp email / mật khẩu không hợp lệ"
   error: "lỗi"
+  submit: "Gửi đi"
   other:
     book: "sách"
     screencast_series: "loạt phim truyền hình"
@@ -70,10 +71,41 @@ vi:
     welcome: "Chào mừng bạn đến với Sample App! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
     activate: "Hoạt động"
     acc_activation: "Kích hoạt tài khoản"
+    mail_reset: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu"
+    mail_not_found: "Không tìm thấy địa chỉ email"
+    pass_empty: "không thể để trống"
+    pass_reset: "Mật khẩu đã được đặt lại."
+    pass_expired: "Đặt lại mật khẩu đã hết hạn."
+    reset_pass: "Đặt lại mật khẩu"
+    forgot_pass: "Quên mật khẩu"
+    forgot_pass1: "(Quên mật khẩu)"
+    pass_re: "Đặt lại mật khẩu"
+    click: "Để đặt lại mật khẩu của bạn, hãy nhấp vào liên kết bên dưới:"
+    two_h: "Liên kết này sẽ hết hạn sau hai giờ."
+    ignore: "Nếu bạn không yêu cầu đặt lại mật khẩu của mình, vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
+    update_pass: "Cập nhật mật khẩu"
+  microposts:
+    created: "Đã tạo micropost!"
+    deleted: "Micropost đã bị xóa"
+    posted: "Đã đăng %{time} trước."
+    post: "Bài đăng"
+    confirm: "Bạn chắc chắn?"
+    max_size: "Kích thước tệp tối đa là 5MB. Vui lòng chọn một tệp nhỏ hơn."
+    placeholder: "Soạn micropost mới ..."
+    view_profile: "xem hồ sơ của tôi"
+    micropost: "micropost"
+    microposts: "microposts"
+    microposts_c: "Microposts"
+    feed: "Nguồn cấp dữ liệu Microposts"
   activerecord:
         errors:
           models:
             user:
               attributes:
                 password:
-                    old_password: "giống với mật khẩu cũ"
+                  old_password: "giống với mật khẩu cũ"
+            micropost:
+              attributes:
+                image:
+                  format: "phải là một định dạng hình ảnh hợp lệ"
+                  less_than: "phải nhỏ hơn 5MB"

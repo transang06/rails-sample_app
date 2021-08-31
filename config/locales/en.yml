@@ -12,6 +12,7 @@ en:
   welcome: "Welcome to the Sample App!"
   invalid_email: "Invalid email/password combination"
   error: "error"
+  submit: "Submit"
   other:
     book: "book"
     screencast_series: "screencast series"
@@ -70,6 +71,32 @@ en:
     welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
     activate: "Activate"
     acc_activation: "Account activation"
+    mail_reset: "Email sent with password reset instructions"
+    mail_not_found: "Email address not found"
+    pass_empty: "can't be empty"
+    pass_reset: "Password has been reset."
+    pass_expired: "Password reset has expired."
+    reset_pass: "Reset password"
+    forgot_pass: "Forgot password"
+    forgot_pass1: "(forgot password)"
+    pass_re: "Password reset"
+    click: "To reset your password click the link below:"
+    two_h: "This link will expire in two hours."
+    ignore: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+    update_pass: "Update password"
+  microposts:
+    created: "Micropost created!"
+    deleted: "Micropost deleted"
+    posted: "Posted %{time} ago."
+    post: "Post"
+    confirm: "You sure?"
+    max_size: "Maximum file size is 5MB. Please choose a smaller file."
+    placeholder: "Compose new micropost..."
+    view_profile: "view my profile"
+    micropost: "micropost"
+    microposts: "microposts"
+    microposts_c: "Microposts"
+    feed: "Micropost Feed"
   activerecord:
       errors:
         models:
@@ -77,3 +104,8 @@ en:
             attributes:
               password:
                 old_password: "is the same as the old password"
+          micropost:
+            attributes:
+              image:
+                format: "must be a valid image format"
+                less_than: "should be less than 5MB"
