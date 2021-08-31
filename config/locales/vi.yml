@@ -84,10 +84,30 @@ vi:
     two_h: "Liên kết này sẽ hết hạn sau hai giờ."
     ignore: "Nếu bạn không yêu cầu đặt lại mật khẩu của mình, vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
     update_pass: "Cập nhật mật khẩu"
+  microposts:
+    created: "Đã tạo micropost!"
+    deleted: "Micropost đã bị xóa"
+    posted: "Đã đăng %{time} trước."
+    post: "Bài đăng"
+    confirm: "Bạn chắc chắn?"
+    max_size: "Kích thước tệp tối đa là 5MB. Vui lòng chọn một tệp nhỏ hơn."
+    placeholder: "Soạn micropost mới ..."
+    view_profile: "xem hồ sơ của tôi"
+    micropost: "micropost"
+    microposts: "microposts"
+    microposts_c: "Microposts"
+    feed: "Nguồn cấp dữ liệu Microposts"
+    err: "Đã xảy ra lỗi"
+    nil: "Bài đăng này không tồn tại trong hệ thống"
   activerecord:
         errors:
           models:
             user:
               attributes:
                 password:
-                    old_password: "giống với mật khẩu cũ"
+                  old_password: "giống với mật khẩu cũ"
+            micropost:
+              attributes:
+                image:
+                  format: "phải là một định dạng hình ảnh hợp lệ"
+                  less_than: "phải nhỏ hơn 5MB"

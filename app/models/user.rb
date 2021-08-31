@@ -8,6 +8,7 @@ class MyValidator < ActiveModel::Validator
 end
 
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i.freeze
   attr_accessor :remember_token, :activation_token, :reset_token
   include ActiveModel::Validations
@@ -24,8 +25,8 @@ class User < ApplicationRecord
   before_save :downcase_email
   before_create :create_activation_digest
 
-  scope :latest, ->{order(created_at: :desc)}
-  scope :activated_true, ->{where(activated: true)}
+  scope :latest, ->{order created_at: :desc}
+  scope :activated_true, ->{where activated: true}
 
   class << self
     def digest string
@@ -78,6 +79,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < Settings.pass_reset_expired.hours.ago
+  end
+
+  def feed
+    Micropost.latest.with_user id
   end
 
   private
