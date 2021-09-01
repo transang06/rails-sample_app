@@ -1,4 +1,11 @@
 # Create a main sample user.
+User.create!(name: "Trần Văn Sáng",
+    email: "vansang10a6txqt@gmail.com",
+    password: "vansang",
+    password_confirmation: "vansang",
+    admin: true,
+    activated: true,
+    activated_at: Time.zone.now)
 User.create!(name: "Example User",
     email: "example@railstutorial.org",
     password: "foobar",
@@ -18,3 +25,17 @@ User.create!(name: "Example User",
     activated: true,
     activated_at: Time.zone.now)
 end
+
+users = User.order(:created_at).take(6)
+50.times do
+  content = Faker::Lorem.sentence(word_count: 5)
+  users.each { |user| user.microposts.create!(content: content) }
+end
+
+# Create following relationships.
+users = User.all
+user = users.first
+following = users[2..50]
+followers = users[3..40]
+following.each { |followed| user.follow(followed) }
+followers.each { |follower| follower.follow(user) }
