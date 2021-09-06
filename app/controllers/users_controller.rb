@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
-  before_action :load_user,
-                only: [:show, :edit, :update, :destroy]
+  before_action :load_user, except: [:index, :new, :create]
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
 
@@ -10,7 +9,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    @microposts = @user.microposts.paginate(page: params[:page])
+    @microposts = @user.microposts.paginate page: params[:page],
+      per_page: Settings.per_page
   end
 
   def new
@@ -46,6 +46,20 @@ class UsersController < ApplicationController
       flash[:warning] = t "users.user_deleted_fails"
     end
     redirect_to users_path
+  end
+
+  def following
+    @title = t "relationships.following"
+    @users = @user.following.paginate page: params[:page],
+      per_page: Settings.per_page
+    render "show_follow"
+  end
+
+  def followers
+    @title = t "relationships.followers"
+    @users = @user.followers.paginate page: params[:page],
+      per_page: Settings.per_page
+    render "show_follow"
   end
 
   private

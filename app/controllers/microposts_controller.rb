@@ -39,6 +39,6 @@ class MicropostsController < ApplicationController
     return if @micropost.present?
 
     flash[:danger] = t "microposts.nil"
-    redirect_to root_url 
+    redirect_to root_url
   end
 end

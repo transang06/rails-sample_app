@@ -99,6 +99,9 @@ en:
     feed: "Micropost Feed"
     err: "An error occurred"
     nil: "This post does not exist in the system"
+  relationships:
+    following: "Following"
+    followers: "Followers"
   activerecord:
       errors:
         models:
